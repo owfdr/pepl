@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
+  "description": "Automatically rerun Python script when it changes",
+  "homepage": "https://github.com/owfdr/sws#readme",
   "scripts": {
     "test": "jest",
     "release": "jest && standard-version",
@@ -10,6 +12,28 @@
   },
   "bin": {
     "pepl": "src/index.js"
+  },
+  "keywords": [
+    "cli",
+    "repl",
+    "python",
+    "reload",
+    "restart",
+    "autoload"
+  ],
+  "author": {
+    "name": "owfdr",
+    "email": "owfdr@ourworld.center"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owfdr/pepl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/owfdr/sws/issues"
+  },
+  "engines": {
+    "node": ">=16"
   },
   "dependencies": {
     "chokidar": "^3.5.3",

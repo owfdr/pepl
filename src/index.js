@@ -8,7 +8,7 @@ const program = new Command();
 
 program
   .version("0.1.0")
-  .description("Run any Python script when it changes")
+  .description("Re-run any Python script when it changes")
   .argument("<file>", "python file to run");
 
 program.parse(process.argv);
