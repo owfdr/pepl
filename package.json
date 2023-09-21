@@ -30,7 +30,7 @@
     "url": "https://github.com/owfdr/pepl.git"
   },
   "bugs": {
-    "url": "https://github.com/owfdr/sws/issues"
+    "url": "https://github.com/owfdr/pepl/issues"
   },
   "engines": {
     "node": ">=16"
