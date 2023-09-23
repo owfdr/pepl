@@ -23,7 +23,7 @@ yarn global add pepl
 ## Usage
 
 ```bash
-pepl <filename.py>
+pepl <filename.py> [args...]
 ```
 
 ## 🧑‍💻 Other Apps
