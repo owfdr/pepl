@@ -14,8 +14,6 @@ program
   .argument("[file]", "Python script to run")
   .argument("[args...]", "Arguments to pass to the Python script");
 
-updateNotifier({ pkg: package }).notify();
-
 const file = program.parse(process.argv).args[0];
 
 if (!file) {
@@ -46,3 +44,5 @@ function pepl(args) {
 
   counter += 1;
 }
+
+updateNotifier({ pkg: package }).notify();
