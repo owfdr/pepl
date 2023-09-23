@@ -26,7 +26,7 @@ yarn global add pepl
 pepl [filename.py] [args...]
 ```
 
-> Note: Pepl will enter interpreter mode if a filename isn't specified.
+> Note: Pepl will enter interpreter mode if filename isn't specified.
 
 ## 🧑‍💻 Other Apps
 
