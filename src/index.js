@@ -2,6 +2,7 @@
 
 const { Command } = require("commander");
 const { spawn } = require("child_process");
+const updateNotifier = require("update-notifier");
 const package = require("../package.json");
 const chokidar = require("chokidar");
 
@@ -12,6 +13,8 @@ program
   .description("Re-run any Python script when it changes")
   .argument("[file]", "Python script to run")
   .argument("[args...]", "Arguments to pass to the Python script");
+
+updateNotifier({ pkg: package }).notify();
 
 const file = program.parse(process.argv).args[0];
 
