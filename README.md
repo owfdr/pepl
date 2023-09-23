@@ -1,10 +1,10 @@
-<img src="./asset/pepl.png" alt="logo" width="100">
+<img src="https://github.com/owfdr/pepl/blob/main/asset/pepl.png?raw=true" alt="logo" width="100">
 
 # Pepl
 
 Automatically rerun Python script when it changes.
 
-![demo gif](asset/demo.gif)
+![demo gif](https://github.com/owfdr/pepl/blob/main/asset/demo.gif?raw=true)
 
 ## Install
 
