@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/owfdr/pepl/compare/v0.1.1...v0.1.2) (2023-09-23)
+
+
+### Features
+
+* interpreter mode ([151af5c](https://github.com/owfdr/pepl/commit/151af5cda9e79a8636d9ff51fd2af48f46838e5f))
+
 ### [0.1.1](https://github.com/owfdr/pepl/compare/v0.1.0...v0.1.1) (2023-09-23)
 
 
