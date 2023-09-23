@@ -2,12 +2,13 @@
 
 const { Command } = require("commander");
 const { spawn } = require("child_process");
+const package = require("../package.json");
 const chokidar = require("chokidar");
 
 const program = new Command();
 
 program
-  .version("0.2.0")
+  .version(package.version)
   .description("Re-run any Python script when it changes")
   .argument("<file> [args...]", "Python script to run");
 
