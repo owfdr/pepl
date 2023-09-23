@@ -10,13 +10,14 @@ const program = new Command();
 program
   .version(package.version)
   .description("Re-run any Python script when it changes")
-  .argument("<file> [args...]", "Python script to run");
+  .argument("[file]", "Python script to run")
+  .argument("[args...]", "Arguments to pass to the Python script");
 
 const file = program.parse(process.argv).args[0];
 
 if (!file) {
-  console.error("No file specified");
-  process.exit(1);
+  console.log("No file provided, enter interpreter mode");
+  spawn("python", [], { stdio: "inherit" });
 }
 
 const watcher = chokidar.watch(file, {

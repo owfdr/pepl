@@ -1,4 +1,4 @@
 import sys
 
 print(sys.argv)
-print("running test.py")
+print("Hello from test.py")

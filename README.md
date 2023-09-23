@@ -23,8 +23,10 @@ yarn global add pepl
 ## Usage
 
 ```bash
-pepl <filename.py> [args...]
+pepl [filename.py] [args...]
 ```
+
+> Note: Pepl will enter interpreter mode if a filename isn't specified.
 
 ## 🧑‍💻 Other Apps
 
