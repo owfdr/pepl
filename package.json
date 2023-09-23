@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "description": "Automatically rerun Python script when it changes",
-  "homepage": "https://github.com/owfdr/sws#readme",
+  "homepage": "https://github.com/owfdr/pepl",
   "scripts": {
     "test": "jest",
     "release": "jest && standard-version",
