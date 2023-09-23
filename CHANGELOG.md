@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/owfdr/pepl/compare/v0.1.5...v0.1.6) (2023-09-23)
+
+
+### Bug Fixes
+
+* notify update at the end ([bc1e368](https://github.com/owfdr/pepl/commit/bc1e3681c2c6f96e9f5adf2df4e94d524f2e93fa))
+
 ### [0.1.5](https://github.com/owfdr/pepl/compare/v0.1.4...v0.1.5) (2023-09-23)
 
 
