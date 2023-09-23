@@ -7,13 +7,11 @@ const chokidar = require("chokidar");
 const program = new Command();
 
 program
-  .version("0.1.0")
+  .version("0.2.0")
   .description("Re-run any Python script when it changes")
-  .argument("<file>", "python file to run");
+  .argument("<file> [args...]", "Python script to run");
 
-program.parse(process.argv);
-
-const file = program.args[0];
+const file = program.parse(process.argv).args[0];
 
 if (!file) {
   console.error("No file specified");
@@ -25,21 +23,21 @@ const watcher = chokidar.watch(file, {
 });
 
 watcher.on("ready", () => {
-  pepl(file);
+  pepl(program.args);
 });
 
 watcher.on("change", () => {
-  pepl(file);
+  pepl(program.args);
 });
 
 let counter = 0;
 
-function pepl(file) {
+function pepl(args) {
   console.log("");
   console.log(`Run ${counter}`);
   console.log("--------------------");
 
-  spawn("python", [file], { stdio: "inherit" });
+  spawn("python", [...args], { stdio: "inherit" });
 
   counter += 1;
 }
